@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
 	 public final static String PATCH_FILE_PATH = "/data/misc/wifi/";
 	 //public final static String PATCH_FILE_PATH = "/sdcard/backups/test/";
 	 
-	 private Thread thread;   
+	
 	 
 	 
     @Override
