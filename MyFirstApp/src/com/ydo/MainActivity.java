@@ -22,7 +22,6 @@ public class MainActivity extends Activity {
 
 	 public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 	 public final static String PATCH_FILE_PATH = "/data/misc/wifi/";
-	 //public final static String PATCH_FILE_PATH = "/sdcard/backups/test/";
 	 
 	
 	 
@@ -34,8 +33,8 @@ public class MainActivity extends Activity {
         TextView currentMacValueText=(TextView)findViewById(R.id.textCurrentMacValue);
         String currentMac = getMacAddress(this);
         currentMacValueText.setText(currentMac);
-       
 
+        // if the button exit is clicked
         if( getIntent().getBooleanExtra("Exit me", false)){
             finish();
             return; // add this to prevent from doing unnecessary stuffs
@@ -130,7 +129,7 @@ public class MainActivity extends Activity {
     public boolean validateCurrentDeviceModel(){
     	String deviceName=getDeviceName();
     	// my nexus4 has a device name "LGE Nexus 4"
-    	return deviceName.contains("Nexus 4");
+    	return deviceName.contains("Nexus 7");
     }
     
     private String getDeviceName() {
